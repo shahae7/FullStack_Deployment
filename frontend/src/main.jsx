@@ -9,7 +9,7 @@ import {
 
 import App from './App'
 
-import { AuthProvider } from './context/AuthContext'
+import { AuthProvider } from './AuthContext'
 
 ReactDOM.createRoot(
   document.getElementById('root')
