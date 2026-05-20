@@ -1,8 +1,10 @@
 import axios from 'axios'
 
 const api = axios.create({
- baseURL: "https://dingy-dodgy-unstylish.ngrok-free.dev/api/v1",
-  withCredentials: false
+  baseURL: "https://dingy-dodgy-unstylish.ngrok-free.dev/api/v1",
+  headers: {
+    "ngrok-skip-browser-warning": "true"
+  }
 })
 
 api.interceptors.request.use(
