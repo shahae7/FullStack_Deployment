@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+﻿from sqlalchemy import Boolean, Column, Integer, String
 
 from app.database.database import Base
 
@@ -21,5 +21,9 @@ class User(Base):
     )
 
     mobile = Column(String)
+
+    status = Column(String, default="Active")
+
+    is_su = Column(Boolean, default=False)
 
     password = Column(String)

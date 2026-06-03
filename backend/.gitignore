@@ -1,5 +1,32 @@
-.venv/
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+
+# Environment Variables
 .env
-*.db
+
+# Alembic
+alembic/versions/__pycache__/
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# React Build
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
